@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories - Our Story</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff5f8;
+            background-image: radial-gradient(#ffb6c1 1.5px, transparent 1.5px);
+            background-size: 25px 25px;
+            font-family: 'Tajawal', sans-serif;
+            padding-bottom: 60px;
+        }
+        .memories-title {
+            font-size: 45px;
+            color: #d81b60;
+            margin-top: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .flower-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+        .memory-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 450px;
+            margin-bottom: 50px;
+        }
+        .hidden-section {
+            display: none;
+        }
+        .memory-image {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(216, 27, 96, 0.15);
+            margin-bottom: 20px;
+        }
+        .history-box {
+            background-color: #FFB6C1;
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 15px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .date-box {
+            background-color: white;
+            color: #d81b60;
+            font-size: 19px;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 12px;
+            border: 2px solid #FFB6C1;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .song-lyrics {
+            background-color: #fffdfd;
+            border: 2px dashed #ffb6c1;
+            padding: 20px;
+            border-radius: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 15px;
+        }
+        .song-title-tag {
+            color: #d81b60;
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .tiktok-btn, .skip-btn {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #d81b60;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            box-shadow: 0 4px 12px rgba(216, 27, 96, 0.3);
+        }
+        .tiktok-btn:hover, .skip-btn:hover {
+            transform: scale(1.05);
+            background-color: #c2185b;
+        }
+        .finished-box {
+            background-color: #d81b60;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            padding: 15px 40px;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0 6px 15px rgba(216, 27, 96, 0.4);
+            letter-spacing: 2px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="memories-title">Memories</div>
+    <img src="cute_flower.png" alt="وردة كيوت" class="flower-icon">
+
+    <div class="memory-section">
+        <img src="image_relationship.png" alt="Our Relationship" class="memory-image">
+        <div class="history-box">The history of our relationship</div>
+        <div class="date-box">2025.4.14</div>
+        <div class="song-lyrics">
+            <span class="song-title-tag">🎵 كوبليه الأغنية:</span>
+            "مأنا عارفة إنه شاريني<br>
+            وأنا قلبي شاري شاري يانا<br>
+            من شقاوتو يانا من حلاوته<br>
+            يا انا من عنيههه"
+        </div>
+    </div>
+
+    <div class="memory-section">
+        <img src="image_birthday.png" alt="My love's birthday" class="memory-image">
+        <div class="history-box">My love's birthday</div>
+        <div class="date-box">2011.1.3</div>
+        <div class="song-lyrics">
+            <span class="song-title-tag">🎵 كوبليه الأغنية:</span>
+            "يا أجمل حب يا حبيبي<br>
+            يا قلبي وروحي<br>
+            مفيش غيرك يداوي جروحي"
+        </div>
+    </div>
+
+    <div class="memory-section">
+        <img src="my_birthday.png" alt="My birthday" class="memory-image">
+        <div class="history-box">My birthday</div>
+        <div class="date-box">2011.6.29</div>
+        <div class="song-lyrics">
+            <span class="song-title-tag">🎵 أغنية تخص اللحظة:</span>
+            اسمعوا الأغنية المميزة دي مع بعض ❤️
+            <br>
+            <a href="https://vt.tiktok.com/ZSVcpytKo/" target="_blank" class="tiktok-btn">اسمع أغنية التيك توك 🎶</a>
+        </div>
+    </div>
+
+    <div class="memory-section">
+        <img src="song_reminder.png" alt="A song that reminds me of you" class="memory-image">
+        <div class="history-box">A song that reminds me of you</div>
+        <div class="song-lyrics">
+            <span class="song-title-tag">🎵 أغنية خاصة ليك:</span>
+            "الأغنية دي بتفكرني بيك دايماً يا عيوني..."
+            <br>
+            <a href="https://vt.tiktok.com/ZSVcpVQnJ/" target="_blank" class="tiktok-btn">اسمع الأغنية هنا 🎶</a>
+        </div>
+    </div>
+
+    <div class="memory-section">
+        <img src="feeling_song.png" alt="A song that describes how I feel about you" class="memory-image">
+        <div class="history-box">A song that describes how I feel about you</div>
+        <div class="song-lyrics">
+            <span class="song-title-tag">🎵 إحساسي ليك:</span>
+            "دي الأغنية اللي بتقول كل اللي في قلبي ليك يا ياسين..."
+            <br>
+            <a href="https://vt.tiktok.com/ZSVcshvc9/" target="_blank" class="tiktok-btn">اسمع الأغنية هنا 🎶</a>
+        </div>
+        <button class="skip-btn" onclick="showSection('cakeSection', this)">Skip ⏭️</button>
+    </div>
+
+    <div id="cakeSection" class="memory-section hidden-section">
+        <img src="cake_final.png" alt="Happy Birthday Cake" class="memory-image">
+        <div class="history-box">Happy birthday</div>
+        <button class="skip-btn" onclick="showSection('kissSection', this)">Skip ⏭️</button>
+    </div>
+
+    <div id="kissSection" class="memory-section hidden-section">
+        <img src="kiss_final.png" alt="Mwah Kiss" class="memory-image">
+        <div class="finished-box">Finished ✨</div>
+    </div>
+
+    <script>
+        function showSection(sectionId, buttonElement) {
+            document.getElementById(sectionId).style.display = 'flex';
+            buttonElement.style.display = 'none';
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
